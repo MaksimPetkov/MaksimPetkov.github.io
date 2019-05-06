@@ -387,6 +387,15 @@ grid-gap: 50px 100px;
 }
 /* Services закончился */
 
+/* mainmanager начинается */
+.top-description{
+  display: flex;
+}
+.top-description-box{
+  height: 500px;
+  width: 40%;
+}
+/* mainmanager закончился */
 
 
 
