@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Целая Лента подарков!</title>
+
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+
+	<meta property="og:site_name" content="Целая Лента подарков!">
+	<meta property="og:title" content="Целая Лента подарков!">
+	<meta property="og:description" content="Выигрывайте призы за 1 рубль или собирайте пазлы чтобы участвовать в розыгрыше суперприза!">
+	<meta property="og:url" content="https://igra.lenta.com">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="https://igra.lenta.com/repost/repost_podarki3.png">
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Целая Лента подарков!">
+	<meta name="twitter:description" content="Выигрывайте призы за 1 рубль или собирайте пазлы чтобы участвовать в розыгрыше суперприза!">
+	<meta name="twitter:image:src" content="https://igra.lenta.com/repost/repost_podarki3.png">
+	<meta name="twitter:url" content="https://igra.lenta.com">
+	<meta name="twitter:domain" content="https://igra.lenta.com">
+	<meta name="twitter:site" content="@your_twitter_account">
+	<meta name="twitter:creator" content="@your_twitter_account">
+
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #3c4aa1;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5X2ZNV');</script>
+
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-53Q7GQ9');</script>
+	<!-- End Google Tag Manager -->
+
+
+</head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X2ZNV"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53Q7GQ9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(57377794, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true,
+			ecommerce:"dataLayer"
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/57377794" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+
+
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="1280" height="720" style="box-shadow: 0 0 15px 5px rgba(0,0,0,0.3)">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
+		</canvas>
+
+	</div>
+
+	<!-- Pages load faster with scripts at the bottom -->
+
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-3.4.1.min.js"></script>
+
+	<script src="JsBarcode.js"></script>
+
+
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+
+	<script>
+	var script = document.createElement('script');
+	script.src = "c2runtime.js?v="+ new Date().getTime();
+	script.async = false;
+	document.head.appendChild(script);
+	</script>
+
+
+    <script>
+
+		script.onload = function()
+		{
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		};
+
+		// Pause and resume on page becoming visible/invisible
+		/*function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);*/
+
+
+    </script>
+</body>
+</html>
